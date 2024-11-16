@@ -1,0 +1,105 @@
+/* Style for selected elements */
+.selected {
+  stroke: blue !important;
+  stroke-width: 2px !important;
+}
+
+/* Style for labels */
+.label {
+  font-family: 'Roboto-Regular, Roboto', serif;
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+  pointer-events: visiblePainted; /* Allow labels to receive pointer events */
+  font-weight: bold; /* Make labels stand out */
+}
+
+/* Style for the page structure */
+.container {
+  display: flex;
+}
+
+.container [class~="w-1/4"] {
+  width: 25%;
+}
+
+.container [class~="w-3/4"]{
+  width: 75%;
+}
+
+/* Style for the list of selected elements */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 4px 0;
+}
+
+ul li button {
+  font-size: 12px;
+}
+
+/* Context menu styles */
+.context-menu {
+  position: fixed; /* Ensure it's positioned relative to the viewport */
+  z-index: 1000;
+  width: 150px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.context-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.context-menu ul li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.context-menu ul li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Disabled button styles */
+button[disabled] {
+  pointer-events: none;
+  opacity: 0.6; /* Optional: Make disabled buttons appear faded */
+}
+
+/* Optional: Ensure context menu items have appropriate text color */
+.context-menu ul li {
+  color: #000;
+}
+
+/* Modern file upload button styles */
+.file-upload-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.upload-button {
+  background-color: #4f46e5; /* Indigo color */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #4338ca; /* Darker indigo on hover */
+}
+
+.file-name {
+  margin-left: 1rem;
+  font-size: 0.875rem;
+  color: #6b7280; /* Gray color for file name */
+}
