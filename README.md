@@ -1,4 +1,4 @@
-# Angular Project Setup and SVG Editor Component Guide
+# SVG Editor Component Guide
 
 This document provides comprehensive instructions on how to set up and run an Angular project, along with an in-depth explanation of the `svg-editor` component. The `svg-editor` component is a powerful tool for editing SVG files, enabling users to upload, modify, and export SVG elements with ease.
 
